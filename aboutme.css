@@ -1,0 +1,117 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #f1e9da;
+    color: #10093E;
+}
+
+.photo-logo {
+    width: 10%;
+    height: 10%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: right;
+    margin: 1em;
+    padding-left: 0.4em;
+    align-items: center;
+}
+
+li {
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 800;
+}
+
+.idintify {
+    margin-right: auto;
+    margin-left: 0.4em;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #10093E;
+}
+
+a:hover {
+    color: #914BCB;
+}
+
+.home {
+    margin-right: 1em;
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+.portfolio-title {
+    background-image: url("https://picsum.photos/200/300.jpg");
+    /* display: flex; */
+    flex-direction: column;
+    width: 100%;
+    background-size: cover;
+    padding: 5em 0em 1em 1em;
+    /* text-align: left;
+    align-items: flex-start; */
+}
+
+span {
+    opacity: 0.7;
+    font-size: 1rem;
+}
+
+.portfolio-card {
+    margin: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(200px, 1fr) 30px 40px minmax(50px, 100%);
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    background: black;
+    padding: 1em 0;
+    color: wheat;
+    margin: 0;
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+h5 {
+    opacity: 0.6;
+}
+
+@media(min-width:645px) {
+    .portfolio {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .portfolio-card {
+        margin: 0.3em;
+    }
+    .footer {
+        width: 100%;
+    }
+    ul li {
+        font-size: 1.7rem;
+        font-weight: 800;
+        padding: 1em;
+    }
+    .logo {
+        font-size: 3rem
+    }
+}
